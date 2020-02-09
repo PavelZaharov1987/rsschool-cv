@@ -18,57 +18,58 @@ I don’t expect everyone to teach me and find a way to find new things from eve
 
 5. Implemented form cloning on the site as a function of adding details.  
 Code examples:
+
 ```html
 <div class="orders">
-        <form action="assets/php/send_order.php" method="POST" enctype="multipart/form-data">
-          <ul>
-              <li class="form-input"> 
+    <form action="assets/php/send_order.php" method="POST" enctype="multipart/form-data">
+        <ul>
+            <li class="form-input"> 
                 <svg width="17" height="25">
-                  <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
+                    <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
                 </svg>
                 <input type="text" name="title" placeholder="Название заказа" required>
-              </li>
-            </ul>
-          <ul class="form-group">
+            </li>
+        </ul>
+        <ul class="form-group">
             <li class="form-input"> 
-              <p>Деталь №1</p>
+                <p>Деталь №1</p>
             </li>
             <li class="form-input">
-              <svg width="17" height="25">
-                <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
-              </svg>
-              <input type="text" placeholder="название детали" name="name-1" id="name" required>
+                <svg width="17" height="25">
+                    <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
+                </svg>
+                <input type="text" placeholder="название детали" name="name-1" id="name" required>
             </li>
             <li class="form-input">
-              <svg width="17" height="25">
-                <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
-              </svg>
-              <input type="text" placeholder="количество деталей" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" name="count-1" id="count" required>
+                <svg width="17" height="25">
+                    <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
+                </svg>
+                <input type="text" placeholder="количество деталей" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" name="count-1" id="count" required>
             </li>
             <li class="form-input">
-              <svg width="17" height="25">
-                <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
-              </svg>
-              <textarea name="comment-1" cols="100" rows="3" placeholder="добавьте комментарий" id="comment"></textarea>
+                <svg width="17" height="25">
+                    <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
+                </svg>
+                <textarea name="comment-1" cols="100" rows="3" placeholder="добавьте комментарий" id="comment"></textarea>
             </li>
             <li class="form-input">
-              <svg width="17" height="25">
-                <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
-              </svg>
-              <div class="add-file">
-                <label class="file-name" for="file-1">добавить архив чертежей или 3d моделей</label>
-                <input class="inputfile inputfile-1" type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple>
-              </div>
+                <svg width="17" height="25">
+                    <path stroke="#fff" stroke-width="1" fill="none" d="M 0,0 17,8 17,16 0,25"></path>
+                </svg>
+                <div class="add-file">
+                    <label class="file-name" for="file-1">добавить архив чертежей или 3d моделей</label>
+                    <input class="inputfile inputfile-1" type="file" name="file-1[]" id="file-1" data-multiple-caption="{count} files selected" multiple>
+                </div>
             </li>
             <li class="form-input">
-              <div class="add-button">
-                <button class="deleteProduct">удалить деталь</button>
-                <button class="addProduct">добавить деталь </button>
-                <input type="submit" value="оформить заказ" id="submit-order">
-              </div>
+                <div class="add-button">
+                    <button class="deleteProduct">удалить деталь</button>
+                    <button class="addProduct">добавить деталь </button>
+                    <input type="submit" value="оформить заказ" id="submit-order">
+                </div>
             </li>
-          </ul>
-        </form>
+        </ul>
+    </form>
 </div>
 ```
 
@@ -105,7 +106,7 @@ $('.addProduct').click(function(e) {
   ```
   
   6. Experience:
-      - [my latest project] (https://customthings.ru);
+      - [my latest project](https://customthings.ru);
       - i’ll add other projects after learning RSSchool.
       
   7. Education:
